@@ -6,7 +6,7 @@ import { auth, signIn, signOut } from "@/auth";
 const Navbar = async () => {
   const session = await auth();
   return (
-    <header className="px-5 py-3 bg-white shadow-sm font-work-sans">
+    <header className="px-5 py-3 bg-white shadow-sm ">
       <nav className="flex justify-between items-center">
         <Link href="/">
           <Image src="/logo.png" alt="logo" width={25} height={10} />
@@ -21,7 +21,7 @@ const Navbar = async () => {
                   await signOut({ redirectTo: "/" });
                 }}
               >
-                <button type="submit" className="text-2xl font-work-sans">
+                <button type="submit" className="text-2xl">
                   Sign Out
                 </button>
               </form>
@@ -35,7 +35,9 @@ const Navbar = async () => {
               }}
               className="px-4 py-2 bg-white text-black rounded hover:bg-gray-700 transition"
             >
-              <button type="submit">Login</button>
+              <button type="submit" className="text-2xl">
+                Login
+              </button>
             </form>
           )}
         </div>

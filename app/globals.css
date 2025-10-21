@@ -1,4 +1,7 @@
 @import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
 @tailwind utilities;
 
 :root {
@@ -45,4 +48,3 @@ body {
   color: var(--foreground);
   font-family: var(--font-work-sans);
 }
-/* @tailwind utilities; */
